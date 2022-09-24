@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/* hero section */
+
+#hero{
+    position:relative;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;       
+}
+#hero::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/Hastings-Restaurants-1.webp); 
+    background-size: cover;
+    background-position: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(70%);
+}
+#hero_content{
+    position: absolute;
+    text-shadow: 2px 2px 2px #000;
+}
+#hero_content h1{
+    color: #fff;
+    font-size: 2.8rem;
+}
+#hero_content h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+#hero_content a{
+    color: #fff;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid orange;
+    background-color: rgb(0, 0, 0,0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+} 
+#hero_content a:hover{
+    background: navy;
+}
+/* ------------------------------------- */
+/* header section */
+
+#header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0, 0, 0, 0.5);
+}
+#navbar h1{
+    color:orange;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+}
+#navbar ul li:hover,#phone a:hover,#mobile_menu u li:hover{
+    background: navy;
+    cursor: pointer;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+#phone a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid orange;
+}
+/* #mobile_menu{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: magenta;
+}
+#mobile_menu ul{
+    display: flex;
+    justify-self: center;
+}
+#mobile_menu u li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+#mobile_menu u li{
+    text-decoration:none;
+    color: #fff;
+}
+@media screen and(max-width: 768px){
+    #mobile_menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+} */
